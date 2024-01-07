@@ -25,7 +25,7 @@ function App() {
   // const bmiValue = weight / (((height / 100) * height) / 100);
 
   const handleResize = useCallback(
-    (e: SyntheticEvent, { size }: ResizeCallbackData) => {
+    (_: SyntheticEvent, { size }: ResizeCallbackData) => {
       setImageWidth(size.width);
       setImageHeight(size.height);
       setHeight(size.height / heightRatio);
